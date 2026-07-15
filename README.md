@@ -37,3 +37,4 @@ This is achieved by booting a temporary Linux kernel into RAM to dump the writea
 
 *   **evilwombat**: Author of [gopro-usb-tools](https://github.com/evilwombat/gopro-usb-tools), providing the critical bootloader capabilities, RAM bootstrap files, and USB memory loader interface.
 *   **Kris Brosch (Include Security)**: For the pioneering hardware reverse-engineering research and documentation on the Dropcam's board layout, boot behavior, and serial command interface, which provided the foundational architecture knowledge for this project. Detailed in their [Include Security Blog Post](https://blog.includesecurity.com/2014/04/reversing-the-dropcam-part-2-rooting-your-dropcam/).
+*   **Gemini**: Doing so much of the work, and helping out. 
