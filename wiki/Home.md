@@ -18,10 +18,8 @@ Welcome to the Dropcam root documentation wiki. This section provides in-depth t
 *   **Wi-Fi:** Atheros AR6003 SDIO dual-band (using the `ath6kl_sdio` kernel module).
 *   **Audio Codec:** AKM AK4642.
 *   **Image Sensor:** OmniVision OV9710 (1MP, native 1280x720 720p).
-*   **LED Status Pins:** Yellow (GPIO 88), Blue (GPIO 89), Red (GPIO 90).
 
 ### Hardware Version 3, 4 & 5 (Dropcam Pro)
 *   **Wi-Fi:** Atheros AR6233 SDIO dual-band.
 *   **Audio Codec:** Wolfson WM8974.
 *   **Image Sensor:** Aptina AR0330 (3.1MP, native 1920x1080 1080p).
-*   **LED Status Pins:** Yellow (GPIO 45), Blue (GPIO 46), Red (GPIO 90).
