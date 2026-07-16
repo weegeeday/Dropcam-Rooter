@@ -64,12 +64,14 @@ Once the flashing completion message is displayed, unplug the USB cable.
 
 After flashing, plug the camera into a standard USB wall charger (or leave it connected to the PC to boot normally). The camera will execute `ie_auto.sh` at startup, set up the static USB network interface at `192.168.75.2`, connect to your Wi-Fi, and launch SSH and Telnet.
 
+We recomend using the rooted toolkit mentioned in step 6 to connect when using usb. If using telnet over wifi, you can simply use that.
+
 ### Securing the Shell
 By default, the root password is empty to ensure you can gain initial access. For security, you must log in immediately and set a password:
 
 1.  Connect to the camera:
     ```bash
-    telnet 192.168.75.2
+    telnet 192.168.x.x
     ```
 2.  Run the standard password configuration utility:
     ```bash
