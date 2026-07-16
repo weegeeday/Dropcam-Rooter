@@ -11,7 +11,7 @@ No. The temporary kernel we boot into RAM (`zImage` and `initrd.lzma`) is from t
 No. The Ambarella A5s boot ROM natively supports entering a USB Command mode (DFU mode) when a physical button is held down at power-on. This allows the host PC to upload binaries directly to the RAM, bypassing any flash memory write blocks.
 
 ## 3. Can I use the camera locally for video streaming (RTSP)?
-Yes. Now that you have root shell access, you can run a comaptible rtsp streamer. (Il be working on some software to have the full capabilities of the dropcam in home assistant later on.) You can configure `ie_auto.sh` to start a local RTSP server to stream video directly into home automation hubs (e.g. Home Assistant, Frigate) completely offline.
+Yes. Now that you have root shell access, you can run a comaptible rtsp streamer. (Il be working on some software to have the full capabilities of the dropcam in home assistant later on.) There are some RTSP tools already on the camera in a binrary folder, but i haven't tested that. You can configure `ie_auto.sh` to start a local RTSP server to stream video directly into home automation hubs (e.g. Home Assistant, Frigate) completely offline.
 
 ## 4. What happens if I make a mistake in `ie_auto.sh`?
 If `ie_auto.sh` is corrupted or crashes, the camera simply fails to mount or execute the hook and falls back to standard USB provisioning mode (appearing as a virtual USB drive). You can easily recover by running `./root_camera.sh` and selecting option 1 to boot into RAM and re-flash it.
