@@ -17,7 +17,7 @@ Yes. Now that you have root shell access, you can run a comaptible rtsp streamer
 If `ie_auto.sh` is corrupted or crashes, the camera simply fails to mount or execute the hook and falls back to standard USB provisioning mode (appearing as a virtual USB drive). You can easily recover by running `./root_camera.sh` and selecting option 1 to boot into RAM and re-flash it.
 
 ## 5. How do I permanently change the root password?
-Log into the camera via Telnet (`telnet 192.168.75.2` or your Wi-Fi IP) and run the `passwd` command. The updated password hashes will be saved to `/mnt/dropcam/shadow` and will persist across reboots.
+Log into the camera via Telnet (`telnet 192.168.75.2` or your Wi-Fi IP) and run the `passwd` command. The updated password hashes will be saved to `/mnt/dropcam/shadow`.
 
 ## 6. How do I change the Wi-Fi network credentials?
 Run the `rooted_toolkit.sh` script on your host PC, select option 2 (Edit Wi-Fi credentials), type the new SSID and Password, and the script will automatically overwrite `/mnt/dropcam/wpa_supplicant.conf` on the camera over the network.
