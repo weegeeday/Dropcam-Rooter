@@ -21,3 +21,6 @@ Log into the camera via Telnet (`telnet 192.168.75.2` or your Wi-Fi IP) and run 
 
 ## 6. How do I change the Wi-Fi network credentials?
 Run the `rooted_toolkit.sh` script on your host PC, select option 2 (Edit Wi-Fi credentials), type the new SSID and Password, and the script will automatically overwrite `/mnt/dropcam/wpa_supplicant.conf` on the camera over the network.
+
+## 7. How can i get the LED on the front working? 
+Run `cat /etc/dropcam.conf`. You'il get your GPIO pins and tons of data on the config of the hardware, but youil need to run `cat /mnt/dropcam/hwver` to find our what revision of hardware you have, to match what pins mentioned in the conf.
