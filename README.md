@@ -4,6 +4,8 @@ This repository contains scripts and utilities to permanently root, jailbreak, a
 
 This is achieved by booting a temporary Linux kernel into RAM to dump the writeable configuration partition, patching it to include custom startup hooks (`ie_auto.sh`), and flashing it back.
 
+If you're looking for software to use your dropcam after its been rooted, check out [droprcam](https://github.com/weegeeday/Droprcam). Turns it into a regular ip camera.
+
 ## Repository Contents
 
 *   **setup.sh**: Host setup script. Resolves compiler and library dependencies, clones the underlying boot toolchain, and prepares the bootstrap files.
