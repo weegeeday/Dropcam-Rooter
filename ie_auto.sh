@@ -60,6 +60,9 @@ mount -o bind /tmp/wpa_supplicant_wrapper "$WPA_PATH"
   # Disable Wi-Fi power saving mode
   iw dev wlan0 set power_save off
 
+  # Start wpa_supplicant manually since we neutered connect and a5s_boot.sh
+  wpa_supplicant -iwlan0 -c/mnt/dropcam/wpa_supplicant.conf -Dnl80211 -B
+
   # Request IP via DHCP once wpa_supplicant connects
   udhcpc -i wlan0 -b -R
 
