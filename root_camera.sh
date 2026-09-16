@@ -153,7 +153,7 @@ if [ -z "$JEFFERSON" ]; then
     else
         echo "    Setting up Python virtual environment for jefferson..."
         python3 -m venv "$SCRIPT_DIR/venv"
-        "$SCRIPT_DIR/venv/bin/pip" install jefferson
+        "$SCRIPT_DIR/venv/bin/pip" install jefferson --break-system-packages
         JEFFERSON="$SCRIPT_DIR/venv/bin/jefferson"
     fi
 fi
